@@ -1,5 +1,5 @@
 # Easy DRF
-##### Easy DRF is a Video series on Django Rest Framework for beginners.
+### Easy DRF is a Video series on Django Rest Framework for beginners.
 
 #### Youtube Playlist 👇-
 [https://www.youtube.com/playlist?list=PLLpdwvkAGftBiEepKjgI1pwfP2qmBdCOu](https://www.youtube.com/playlist?list=PLLpdwvkAGftBiEepKjgI1pwfP2qmBdCOu)
