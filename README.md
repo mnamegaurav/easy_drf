@@ -4,6 +4,8 @@
 #### Youtube Playlist 👇-
 [https://www.youtube.com/playlist?list=PLLpdwvkAGftBiEepKjgI1pwfP2qmBdCOu](https://www.youtube.com/playlist?list=PLLpdwvkAGftBiEepKjgI1pwfP2qmBdCOu)
 
+#### Join us on Discord to ask your doubts and issues <a href='https://discord.gg/gqmdBg9qHR' target='_blank'>Join</a>
+
 #### Projects 👇-
     1. Checklist APP API (Similar to Google Keep)
     2. QnA APP API with JWT Auth
