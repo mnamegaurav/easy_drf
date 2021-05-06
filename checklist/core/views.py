@@ -20,7 +20,7 @@ class TestAPIVIew(APIView):
 
 class CheckListsAPIView(APIView):
     serializer_class = CheckListSerializer
-    permission_classes = [IsAuthenticated,]
+    # permission_classes = [IsAuthenticated,]
 
     def get(self, request, format=None):
         data = CheckList.objects.all()
