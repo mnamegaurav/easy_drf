@@ -28,7 +28,10 @@ class CheckListsAPIView(ListCreateAPIView):
     def get_queryset(self):
         queryset = CheckList.objects.filter(user=self.request.user)
         return queryset
-
+    
+    """
+    We can achieve the same thing above by just overriding these method commented below and instead of inherting ListCreateAPIView, we could have used GenericAPIView.
+    """
     # def get(self, request, format=None):
     #     data = CheckList.objects.filter(user=request.user)
 
@@ -57,7 +60,10 @@ class CheckListAPIView(RetrieveUpdateDestroyAPIView):
     def get_queryset(self):
         queryset = CheckList.objects.filter(user=self.request.user)
         return queryset
-
+    
+    """
+    We can achieve the same thing above by just overriding these method commented below and instead of inherting RetrieveUpdateDestroyAPIView, we could have used GenericAPIView.
+    """
     # def get_object(self, pk):
     #     try:
     #         obj = CheckList.objects.get(pk=pk)
@@ -92,7 +98,10 @@ class CheckListItemCreateAPIView(CreateAPIView):
     """
     serializer_class = CheckListItemSerializer
     permission_classes = [IsAuthenticated, IsOwner]
-
+    
+    """
+    We can achieve the same thing above by just overriding these method commented below and instead of inherting CreateAPIView, we could have used GenericAPIView.
+    """
     # def post(self, request, format=None):
     #     # Code for creation
     #     serializer = self.serializer_class(data=request.data, context={'request': request})
@@ -114,6 +123,9 @@ class CheckListItemAPIView(RetrieveUpdateDestroyAPIView):
         queryset = CheckListItem.objects.filter(user=self.request.user)
         return queryset
 
+    """
+    We can achieve the same thing above by just overriding these method commented below and instead of inherting RetrieveUpdateDestroyAPIView, we could have used GenericAPIView.
+    """
     # def get_object(self, pk):
     #     try:
     #         obj = CheckListItem.objects.get(pk=pk)
